@@ -1,11 +1,10 @@
 class Box {
-    private:
-       int length;
-       int width;
-       int height;
-    public:
-       // write prototypes of setters for length, width and height
-       // write prototypes of getters for length, width and height
- 
-       int calcVolume();
+private:
+int length;
+int width;
+int height;
+public:
+    void setBox(int l,int w,int h);
+    void getBox();
+	int calcVolume();
 };
