@@ -1,20 +1,19 @@
-#include<Student.h>
-#include <iostream>
-
+#include"Student.h"
+#include<iostream>
+#include<cstring>
 using namespace std;
+int main(){
 
-void Student::setassignsDetails(int sid,char n[]){
+void Student::assignDetails(int stid,const char pname[])
+{
+	
 	studentid=sid;
-	name[20]=n[20];
+	strcpy_s(name,pname);
+  
 }
-void Student::assignsDetails(){
-	   	cout<<"Student id ="<<studentid<<endl<<"Student Name = "<<name[20]<<endl;
+void Student::display(){
+	   	cout<<"Student id ="<<studentid<<"Student Name = "<<name<<endl;
 	}
-	int main(){
-		Student s1,s2;
-		
-		s1.setassignsDetails(55,binu);
-		s1.assignsDetails(); 
-		
-		return 0;
-	}
+
+return 0;
+}
